@@ -1,0 +1,35 @@
+{
+  "name": "cs_WebApp",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.5",
+    "aws-iot-device-sdk": "^2.2.1",
+    "chart.js": "^2.8.0",
+    "d3-request": "^1.0.6",
+    "echarts": "^4.1.0",
+    "echarts-countries-js": "^1.0.4",
+    "example-cities": "0.0.0",
+    "immutable": "^4.0.0-rc.12",
+    "materialize-css": "^1.0.0",
+    "meteor-node-stubs": "^0.4.1",
+    "r-dom": "^2.4.0",
+    "react": "^16.5.0",
+    "react-chartjs-2": "^2.7.4",
+    "react-dom": "^16.5.0",
+    "react-map-gl": "^4.1.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
